@@ -18,32 +18,34 @@ import bgSnowDay from '../assets/img/bg_snow_day.png';
 import bgSnowNight from '../assets/img/bg_snow_night.png';
 
 export const weatherIcons = {
-  Clouds: {
-    name: "Nuvens",
-    bg_day: bgCloudyDay,
-    bg_night: bgCloudyNight,
-    icon_day: iconCloudyDay,
-    icon_night: iconCloudyNight,
-  },
-  Rain: {
-    name: "Chuva",
-    bg_day: bgRainDay,
-    bg_night: bgRainNight,
-    icon_day: iconRainDay,
-    icon_night: iconRainDay,
-  },
-  Clear: {
-    name: "Limpo",
-    bg_day: bgClearDay,
-    bg_night: bgClearNight,
-    icon_day: iconClearDay,
-    icon_night: iconClearNight,
-  },
-  Snow: {
-    name: "Neve",
-    bg_day: bgSnowDay,
-    bg_night: bgSnowNight,
-    icon_day: iconSnowDay,
-    icon_night: iconSnowNight,
-  },
-}
+	Clouds: {
+		name: 'Nuvens',
+		bg_day: bgCloudyDay,
+		bg_night: bgCloudyNight,
+		icon_day: iconCloudyDay,
+		icon_night: iconCloudyNight,
+	},
+	Rain: {
+		name: 'Chuva',
+		bg_day: bgRainDay,
+		bg_night: bgRainNight,
+		icon_day: iconRainDay,
+		icon_night: iconRainDay,
+	},
+	Clear: {
+		name: 'Limpo',
+		bg_day: bgClearDay,
+		bg_night: bgClearNight,
+		icon_day: iconClearDay,
+		icon_night: iconClearNight,
+	},
+	Snow: {
+		name: 'Neve',
+		bg_day: bgSnowDay,
+		bg_night: bgSnowNight,
+		icon_day: iconSnowDay,
+		icon_night: iconSnowNight,
+	},
+};
+
+export type WeatherIconsKeysProps = keyof typeof weatherIcons;
